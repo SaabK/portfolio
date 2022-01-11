@@ -1,7 +1,9 @@
-$dark-color: #0b023d;
-$blue-color: #141E61;
-$grey-color: #787A91;
-$white-color: #EEEEEE;
+// TODO change color scheme of website
+// TODO implement typewriter.
+
+$black: #1a1a1a;
+// $grey: #;
+$orange: #ef6929;
 
 * {
     box-sizing: border-box;
@@ -17,7 +19,7 @@ $white-color: #EEEEEE;
 }
 
 .header {
-    background-color: $dark-color;
+    background-color: $black;
 }
 
 .navbar {
@@ -26,7 +28,7 @@ $white-color: #EEEEEE;
     .logo  {
         display: flex;
         h2 {
-            color: rgb(229, 230, 189);
+            color: $orange;
             display: inline;
             align-self: center;
         }
@@ -39,16 +41,29 @@ $white-color: #EEEEEE;
     }
 }
 
+.about {
+    background-color: $black;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     li {
         list-style-type: none;
-        margin: 20px 20px;
-        padding: 0 10px;
+        cursor: pointer;
+        margin: 10px 20px;
+        border-radius: 25px;
+        padding: 10px 10px;
+        background-color: $orange;
+        border: transparent solid 2px;
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            border: $orange solid 2px;
+            background-color: transparent;
+        }
         a {
-            color: $white-color;
+            color: white;
             text-decoration: none;
         }
     }
@@ -57,9 +72,10 @@ $white-color: #EEEEEE;
 .contact-form {
     float: right;
     position: sticky;
+    margin: 5px 0;
     .form {
-        background-color: $white-color;
-        border-radius: 17px;
+        background-color: rgb(231, 230, 230);
+        border-radius: 17px 17px 0 0;
         padding: 8px;
     }
     h2 {
@@ -87,4 +103,13 @@ $white-color: #EEEEEE;
             width: 90%;
         }
     }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 10px;
 }
