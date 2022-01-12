@@ -1,115 +1,237 @@
-// TODO change color scheme of website
-// TODO implement typewriter.
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Poppins:wght@200;400;700&family=Roboto:wght@300&display=swap");
 
 $black: #1a1a1a;
-// $grey: #;
+$grey: #292929;
 $orange: #ef6929;
+$red: #e93c3c;
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  scroll-behavior: smooth;
 }
 
 .container {
-    margin: 0 auto;
-    width: 84%;
+  margin: 0 auto;
+  width: 84%;
+}
+
+.heading {
+  font-size: 2.1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.divider {
+  border: $orange 4px solid;
 }
 
 .header {
-    background-color: $black;
+  background-color: $black;
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  .logo {
     display: flex;
-    justify-content: space-between;
-    .logo  {
-        display: flex;
-        h2 {
-            color: $orange;
-            display: inline;
-            align-self: center;
-        }
-        img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 4px 5px;
-        }
+    h2 {
+      color: $orange;
+      display: inline;
+      align-self: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     }
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 4px 5px;
+    }
+  }
 }
 
 .about {
-    background-color: $black;
+  background-color: $grey;
+  height: 88vh;
+  .container {
+    height: 88vh;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    li {
-        list-style-type: none;
-        cursor: pointer;
-        margin: 10px 20px;
-        border-radius: 25px;
-        padding: 10px 10px;
-        background-color: $orange;
-        border: transparent solid 2px;
-        &:hover {
-            transition: all 0.3s ease-in-out;
-            border: $orange solid 2px;
-            background-color: transparent;
-        }
-        a {
-            color: white;
-            text-decoration: none;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 20px;
+    border-radius: 25px;
+    padding: 10px 16px;
+    background-color: $orange;
+    border: transparent solid 2px;
+    &:hover {
+      transition: all 260ms ease-in-out;
+      border: $orange solid 2px;
+      background-color: transparent;
     }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
-.contact-form {
-    float: right;
-    position: sticky;
-    margin: 5px 0;
-    .form {
-        background-color: rgb(231, 230, 230);
-        border-radius: 17px 17px 0 0;
-        padding: 8px;
+#contact-me-link {
+  margin-right: 0;
+}
+
+a.icon {
+  i {
+    color: white;
+  }
+  padding: 16px 18px;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.txt {
+  font-weight: bolder;
+  color: $orange;
+}
+
+.txt-type > .txt {
+  border-right: solid 0.2rem $orange;
+  animation: blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+.intro {
+  color: white;
+  font-size: 2.31415928rem;
+  position: relative;
+  bottom: 40px;
+  p,
+  h2,
+  .typewriter {
+    color: white;
+  }
+  .btn {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 20px;
+    margin-left: 0;
+    border-radius: 25px;
+    padding: 10px 16px;
+    background-color: $orange;
+    border: transparent solid 2px;
+    &:hover {
+      transition: all 260ms ease-in-out;
+      border: $orange solid 2px;
+      background-color: transparent;
     }
-    h2 {
-        text-align: center;
-        background-color: rgb(142, 150, 140);
-        padding: 10px 0;
-        border-radius: 17px 17px 0 0;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.07rem;
     }
-    #textboxwalalabel{
-        text-align: center;
-        z-index: 99;
-    }
-    label {
-        display: block;
-        margin: 5px 0;
-        text-align: center;
-        #textbox{
-            width: 100%;
-            margin: 5px 0 0 0;
-            resize: vertical;
-        }
-        input {
-            margin: 0 10px;
-            padding: 2px;
-            width: 90%;
-        }
-    }
+  }
+  .cv {
+    display: inline-block;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.abt-me-heading {
+  text-align: center;
+  margin: 10px;
+}
+
+.about-me-para {
+  padding: 0 10px 10px 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+#writing-img {
+  width: 35%;
+  max-width: 35%;
+  max-height: 250px;
+  margin-right: 10px;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: $black;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-menu {
+  background-color: rgb(70, 70, 70);
+}
+
+.link {
+  padding: 4px 0;
+  text-align: center;
+  a {
     color: white;
-    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(239, 105, 41, 0.8);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media all and (min-width: 799px) {
+  .buttons {
+    display: visible;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media all and (max-width: 798px) {
+  .buttons {
+    display: none;
+  }
+
+  a.icon {
+    display: inline-block;
+    
+  }
+
+  .logo {
+    h2 {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
 }

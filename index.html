@@ -1,55 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Portfolio - Ali Bin Naseer</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="Images/logo.jpg" alt="logo">
-                    <h2>ALI BIN NASEER</h2>
-                </div>
-                <ul class="buttons">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Skills</a></li>
-                    <li><a href="/">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <div class="about">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Portfolio - Ali Bin Naseer</title>
+</head>
+
+<body>
+  <div class="flex-wrapper">
+    <div class="content">
+      <header class="header">
         <div class="container">
-            <p>Hi, I am Ali. I am a <span class="txt-type" data-wait="3000" data-words="['Developer', 'Designer', 'YouTuber']"></span></p>
-    
-            <div class="contact-form">
-                <div class="form">
-                <h2>Contact Form</h2>
-                    <label> Name
-                        <input class="textform" type="text">
-                    </label>
-                    <label> Email
-                        <input class="textform" type="email">
-                    </label>
-                    <label id="textboxwalalabel"> Say Something
-                        <textarea name="textbox" id="textbox" cols="25" rows="5"></textarea>
-                    </label>
-                </div>
+          <nav class="navbar">
+            <div class="logo">
+              <!-- <img src="Images/logo.jpg" alt="logo" /> -->
+              <h2>ALI BIN NASEER</h2>
             </div>
-    
+            <ul class="buttons">
+              <li><a href="/">Home</a></li>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Skills</a></li>
+              <li id="contact-me-link"><a href="/">Contact Me</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
         </div>
+      </header>
+      <div class="hamburger-menu">
+        <div class="container">
+          
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="container">
+          <div class="intro">
+            <p>
+              Hi, My Name is
+            <h2 class="my-name">Ali Bin Naseer</h2>
+            <div class="typewriter">
+              I am a
+              <span class="txt-type" data-wait="1750" data-words='["Developer.", "Designer.", "YouTuber."]'></span>
+            </div>
+            <button class="btn">
+              <a href="#">Hire me</a>
+            </button>
+            <a class="cv" href="#">Download CV</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="moreabout">
+        <section class="sec">
+          <h1 class="heading abt-me-heading">
+            About Me
+          </h1>
+          <article class="about-me-para">
+            <img id="writing-img" src="Images/writing.jpg" alt="person writing something">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, dicta. Illo necessitatibus quasi atque
+              quae provident, nam quidem amet numquam laboriosam repudiandae animi quaerat aut explicabo perspiciatis!
+              Iure aperiam ratione dolores, cum similique eos. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Vero assumenda aspernatur impedit enim repudiandae a, explicabo maxime nisi obcaecati voluptates nobis ut
+              id praesentium, delectus iure non distinctio est tempora eum rem error minus. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Eaque, provident dolores ea maiores, perferendis necessitatibus non
+              molestiae nesciunt nisi reiciendis praesentium! Sapiente neque, consectetur, at consequatur eligendi
+              molestias nostrum voluptas aliquid dolores harum cum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Labore eos a officiis voluptatibus pariatur corporis perspiciatis aut magni tempora vitae, voluptas
+              sint minus quidem perferendis magnam debitis dicta sequi rem, nam dolorum. Quaerat in culpa cum non ipsum
+              minus aut aliquam laborum numquam quibusdam quas voluptate molestias, ipsa omnis accusantium.
+            </p>
+          </article>
+        </section>
+      </div>
     </div>
 
-    <footer class="footer">
-        Copyright &copy; 2022, All Rights Reserved
-    </footer>
-    <script src="app.js"></script>
+    <div class="footer-div">
+      <footer class="footer">Copyright &copy; 2022 | All Rights Reserved</footer>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/d9fe4e076d.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
