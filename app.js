@@ -57,7 +57,7 @@ function init() {
 
 function menu() {
     let container = document.querySelector('.hamburger-menu .container');
-    if(container.style.display === "block") {
+    if (container.style.display === "block") {
         container.style.display = "none";
     } else {
         container.style.display = "block";
@@ -66,5 +66,7 @@ function menu() {
     <div class="link"><a href="#">About</a></div>
     <div class="link"><a href="#">Skills</a></div>
     <div class="link"><a href="#">Contact Me</a></div></div>`
-    
+
 }
+
+// this is seriously no copied

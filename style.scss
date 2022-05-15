@@ -185,34 +185,34 @@ a.icon {
   place-items: center;
   margin-bottom: 10px;
 }
-.skill-bars{
+.skill-bars {
   padding: 25px 30px;
   width: 600px;
   background: #fff;
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.skill-bars .bar{
+.skill-bars .bar {
   margin: 20px 0;
 }
-.skill-bars .bar:first-child{
+.skill-bars .bar:first-child {
   margin-top: 0px;
 }
-.skill-bars .bar .info{
+.skill-bars .bar .info {
   margin-bottom: 5px;
 }
-.skill-bars .bar .info span{
+.skill-bars .bar .info span {
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
 @keyframes showText {
-  100%{
+  100% {
     opacity: 1;
   }
 }
-.skill-bars .bar .progress-line{
+.skill-bars .bar .progress-line {
   height: 10px;
   width: 100%;
   background: #f0f0f0;
@@ -220,40 +220,40 @@ a.icon {
   transform: scaleX(0);
   transform-origin: left;
   border-radius: 10px;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-              0 1px rgba(255,255,255,0.8);
-  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 @keyframes animate {
-  100%{
+  100% {
     transform: scaleX(1);
   }
 }
-.bar .progress-line span{
+.bar .progress-line span {
   height: 100%;
   position: absolute;
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
   background: $orange;
-  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
-.bar .progress-line.html span{
+.bar .progress-line.html span {
   width: 95%;
 }
-.bar .progress-line.css span{
+.bar .progress-line.css span {
   width: 70%;
 }
-.bar .progress-line.jquery span{
+.bar .progress-line.jquery span {
   width: 65%;
 }
-.bar .progress-line.js span{
+.bar .progress-line.js span {
   width: 80%;
 }
-.bar .progress-line.react span{
+.bar .progress-line.react span {
   width: 60%;
 }
-.progress-line span::before{
+.progress-line span::before {
   position: absolute;
   content: "";
   top: -10px;
@@ -267,7 +267,7 @@ a.icon {
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
-.progress-line span::after{
+.progress-line span::after {
   position: absolute;
   top: -28px;
   right: 0;
@@ -281,23 +281,23 @@ a.icon {
   animation: showText2 0.5s 1.5s linear forwards;
 }
 @keyframes showText2 {
-  100%{
+  100% {
     opacity: 1;
   }
 }
-.progress-line.html span::after{
+.progress-line.html span::after {
   content: "95%";
 }
-.progress-line.css span::after{
+.progress-line.css span::after {
   content: "70%";
 }
-.progress-line.jquery span::after{
+.progress-line.jquery span::after {
   content: "65%";
 }
-.progress-line.js span::after{
+.progress-line.js span::after {
   content: "80%";
 }
-.progress-line.react span::after{
+.progress-line.react span::after {
   content: "60%";
 }
 
@@ -367,7 +367,6 @@ a.icon {
 
   a.icon {
     display: inline-block;
-    
   }
 
   .logo {
@@ -401,3 +400,5 @@ a.icon {
     font-size: 1.2rem;
   }
 }
+
+// Pretty ugly website
