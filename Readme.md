@@ -2,7 +2,7 @@
 
 This is the Second Version of my Portfolio. It has a completely new design and new look.
 But much of the work is incomplete.
-Website can be seen on [github pages]
+Website can be seen on [github pages](https://saabk.github.io/portfolio/)
 
 ## Technologies Used
 
