@@ -6,9 +6,9 @@ Website can be seen on [github pages]
 
 ## Technologies Used
 
-HTML 5
-CSS 3
-JAVASCRIPT ES 6
+- **HTML 5**
+- **CSS 3**
+- **JAVASCRIPT ES 6**
 
 ## V2.0.0
 
