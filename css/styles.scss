@@ -1,0 +1,547 @@
+$dark-gray: #333333;
+$light-gray: rgba(0, 0, 0, 0.2);
+$dark-green: #249c6c;
+$green: #34df9a;
+$purple: #4e4adf;
+$white: #f9f9f9;
+$yellow: #ffc35d;
+$orange: #ff8c76;
+$blue: #3467df;
+$black: #262626;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Ubuntu //
+
+@font-face {
+  font-family: "ubuntubold";
+  src: url("../fonts/ubuntu\ maxed/ubuntu-b-webfont.woff2") format("woff2"),
+    url("../fonts/ubuntu\ maxed/ubuntu-b-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ubuntumedium";
+  src: url("../fonts/ubuntu\ maxed/ubuntu-m-webfont.woff2") format("woff2"),
+    url("../fonts/ubuntu\ maxed/ubuntu-m-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ubunturegular";
+  src: url("../fonts/ubuntu\ maxed/ubuntu-r-webfont.woff2") format("woff2"),
+    url("../fonts/ubuntu\ maxed/ubuntu-r-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ubuntulight";
+  src: url("../fonts/ubuntu\ maxed/ubuntu-l-webfont.woff2") format("woff2"),
+    url("../fonts/ubuntu\ maxed/ubuntu-l-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Aileron //
+
+@font-face {
+  font-family: "aileronblack";
+  src: url("../fonts/aileronmaxed/aileron-black-webfont.woff2") format("woff2"),
+    url("../fonts/aileronmaxed/aileron-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aileronheavy";
+  src: url("../fonts/aileronmaxed/aileron-heavy-webfont.woff2") format("woff2"),
+    url("../fonts/aileronmaxed/aileron-heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aileronsemibold";
+  src: url("../fonts/aileronmaxed/aileron-semibold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/aileronmaxed/aileron-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Raleway //
+
+@font-face {
+  font-family: "ralewaybold";
+  src: url("../fonts/ralewaymaxed/raleway-bold-webfont.woff2") format("woff2"),
+    url("../fonts/ralewaymaxed/raleway-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewayextrabold";
+  src: url("../fonts/ralewaymaxed/raleway-extrabold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/ralewaymaxed/raleway-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewayheavy";
+  src: url("../fonts/ralewaymaxed/raleway-heavy-webfont.woff2") format("woff2"),
+    url("../fonts/ralewaymaxed/raleway-heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaylight";
+  src: url("../fonts/ralewaymaxed/raleway-light-webfont.woff2") format("woff2"),
+    url("../fonts/ralewaymaxed/raleway-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaymedium";
+  src: url("../fonts/ralewaymaxed/raleway-medium-webfont.woff2") format("woff2"),
+    url("../fonts/ralewaymaxed/raleway-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewayregular";
+  src: url("../fonts/ralewaymaxed/raleway-regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/ralewaymaxed/raleway-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: $white;
+}
+
+.container {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.home-page {
+  background: url("../images/BlueBackground.png");
+  height: 800px;
+  background-repeat: no-repeat;
+
+  .logo {
+    font-family: ubuntubold;
+    font-weight: bolder;
+    color: $white;
+    font-size: 1.9rem;
+    padding: 2px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .navbar {
+    li {
+      list-style-type: none;
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+
+        .nav-button {
+          padding: 8px;
+          border: none;
+          border-radius: 3px;
+          background-color: $black;
+          color: $white;
+          font-family: ubunturegular;
+          font-weight: 500;
+          font-size: 1.05rem;
+          margin: 0 10px;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.05, 1.05);
+            background-color: $dark-gray;
+          }
+        }
+      }
+    }
+  }
+
+  section.intro {
+    display: flex;
+    justify-content: space-between;
+
+    .little-about {
+      font-family: meduim;
+      height: 100%;
+      width: 50%;
+      font-size: 2.4rem;
+      margin-top: 10%;
+      color: $white;
+      font-family: ubuntumedium;
+
+      .black-text {
+        color: rgb(19, 19, 19);
+      }
+
+      .profession-name {
+        background-color: $black;
+        display: inline-block;
+        font-size: 2.4rem;
+        padding: 5px 21px;
+        text-transform: uppercase;
+        border-radius: 14px;
+      }
+    }
+
+    .home-image {
+      img {
+        width: 540px;
+        margin: 10% 0;
+      }
+    }
+  }
+}
+
+.about-me-page {
+  .container {
+    .sub-container {
+      display: flex;
+      align-items: center;
+
+      .my-image {
+        display: inline-block;
+        background-color: white;
+        border: 2px solid rgb(77, 77, 77);
+        width: 300px;
+        height: 384px;
+        margin: 20px 0;
+      }
+
+      section.about-me {
+        width: 70%;
+        margin: 30px 90px;
+
+        .heading {
+          font-size: 3.689rem;
+          font-family: aileronblack;
+          color: $dark-gray;
+          text-transform: uppercase;
+        }
+
+        .sub-heading {
+          text-transform: uppercase;
+          margin: 20px 0 10px 0;
+          font-family: ralewayheavy;
+          color: $purple;
+          font-size: 1.7rem;
+        }
+
+        article.about-me-para {
+          font-size: 1.2893452rem;
+          font-family: ralewaymedium;
+          line-height: 30px;
+          color: #444444;
+          text-align: justify;
+
+          strong {
+            font-family: ralewaybold;
+          }
+        }
+
+        .icons {
+          margin-top: 20px;
+
+          ul {
+            display: flex;
+
+            li {
+              list-style-type: none;
+              margin: 0 10px;
+
+              &:nth-child(1) {
+                margin-left: 0;
+              }
+
+              img {
+                width: 24px;
+                opacity: 71%;
+                height: auto;
+                transition: opacity 0.24569823s ease-in;
+
+                &:hover {
+                  opacity: 99%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.skills-page {
+  background: #efefef;
+  border-top: 1.4px solid $light-gray;
+  border-bottom: 1.4px solid $light-gray;
+
+  .skill-section {
+    margin-bottom: 50px;
+
+    h1 {
+      font-family: ubuntubold;
+      text-transform: uppercase;
+      font-size: 4.5rem;
+      margin: 32px 0 7px 0;
+    }
+
+    .sub-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      article.skills-para {
+        font-family: ubunturegular;
+        font-size: 1.6rem;
+        width: 50%;
+        line-height: 2.04rem;
+        color: rgba(44, 44, 44, 0.79);
+
+        strong {
+          font-family: ubuntubold;
+          color: rgb(58, 58, 58);
+        }
+
+        p {
+          margin-top: 6px;
+          font-size: 111%;
+        }
+
+        ul.skills-list {
+          position: relative;
+          left: 25px;
+          margin: 10px 0;
+          display: flex;
+          width: 75%;
+          justify-content: space-between;
+          font-family: ubuntulight;
+          color: rgba($color: #000000, $alpha: 0.72851);
+
+          .skill {
+            margin: 6px 0;
+          }
+        }
+      }
+
+      .skills-image img {
+        width: 520px;
+      }
+    }
+  }
+}
+
+.contact-page {
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contact-me {
+      width: 50%;
+      margin-bottom: 20px;
+
+      h1 {
+        text-transform: uppercase;
+        font-family: ubuntubold;
+        font-size: 3.9rem;
+        margin: 80px 0 40px 0;
+      }
+
+      .contact-info {
+        margin: 10px 0 50px 0;
+
+        .email,
+        .phone {
+          h2 {
+            font-family: ubunturegular;
+            font-size: 2.6rem;
+            font-weight: 600;
+          }
+
+          p {
+            display: inline-block;
+            font-size: 2.0789rem;
+            text-decoration: underline;
+            font-family: ubunturegular;
+            margin: 5px 0 10px 80px;
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+
+        .location {
+          margin: 35px 0 5px 0;
+          h1 {
+            font-size: 2.7rem;
+            text-transform: capitalize;
+            margin: 5px 0;
+          }
+
+          p {
+            font-family: ubunturegular;
+            font-size: 1.8rem;
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+      }
+
+      .icons {
+        position: relative;
+        bottom: 5px;
+
+        ul {
+          display: flex;
+
+          li {
+            list-style-type: none;
+            margin: 0 14px;
+
+            &:nth-child(1) {
+              margin-left: 0;
+            }
+
+            img {
+              width: 33px;
+              opacity: 71%;
+              height: auto;
+              transition: opacity 0.24569823s ease-in;
+
+              &:hover {
+                opacity: 99%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .form-background {
+      background: white;
+      width: 420px;
+      height: 600px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.17564);
+
+      .form {
+        // display: grid;
+        padding: 30px;
+        width: inherit;
+        margin: 0 auto;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: auto;
+        column-gap: 15px;
+        place-items: center;
+
+        .sameline {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .field {
+          display: flex;
+          flex-direction: column;
+          width: 160px;
+          margin: 15px 0;
+
+          span {
+            color: red;
+            position: relative;
+            bottom: 3px;
+          }
+
+          label {
+            display: inline-block;
+            font-family: aileronheavy;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: rgba(45, 45, 45, 0.57);
+            margin-bottom: 2px;
+          }
+
+          input {
+            padding: 10px 15px;
+            border: 2px solid rgba(0, 0, 0, 0.24);
+            font-size: 1.1rem;
+            border-radius: 3px;
+          }
+        }
+
+        .firstname,
+        .lastname {
+          width: 170px;
+        }
+
+        .email {
+          width: auto;
+        }
+
+        .message {
+          width: auto;
+          margin-top: 30px;
+          textarea {
+            font-size: 1.1rem;
+            border-radius: 3px;
+            padding: 10px;
+            font-size: 1.2rem;
+            resize: none;
+            border: 2px solid rgba(0, 0, 0, 0.24);
+          }
+        }
+
+        .btn-submit {
+          width: 100%;
+          padding: 11px 0;
+          border-radius: 2px;
+          border: none;
+          background-color: #6461db;
+          color: $white;
+          font-family: aileronsemibold;
+          font-size: 1.02rem;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $dark-gray;
+  padding: 7px 0;
+  width: 100%;
+  text-align: center;
+  color: $white;
+  font-family: ubuntumedium;
+
+  span {
+    font-family: ubunturegular;
+    font-size: 1.05rem;
+  }
+}
