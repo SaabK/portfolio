@@ -29,4 +29,6 @@ Website can be seen on [github pages](https://saabk.github.io/portfolio/)
 - **Not Responsive**
 - **Fiverr Icon does not have a link**
 - **No Modal for Fiverr Icon**
-- **Not Cool Coding Techniques**
+- **Not Clean Code**
+- **No React Involved**
+- **No Logo**
