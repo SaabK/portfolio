@@ -1,0 +1,130 @@
+@import "./CSS/variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Ubuntu //
+
+@font-face {
+  font-family: "ubuntubold";
+  src: url("./fonts/ubuntu\ maxed/ubuntu-b-webfont.woff2") format("woff2"),
+    url("./fonts/ubuntu\ maxed/ubuntu-b-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ubuntumedium";
+  src: url("./fonts/ubuntu\ maxed/ubuntu-m-webfont.woff2") format("woff2"),
+    url("./fonts/ubuntu\ maxed/ubuntu-m-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ubunturegular";
+  src: url("./fonts/ubuntu\ maxed/ubuntu-r-webfont.woff2") format("woff2"),
+    url("./fonts/ubuntu\ maxed/ubuntu-r-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ubuntulight";
+  src: url("./fonts/ubuntu\ maxed/ubuntu-l-webfont.woff2") format("woff2"),
+    url("./fonts/ubuntu\ maxed/ubuntu-l-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Aileron //
+
+@font-face {
+  font-family: "aileronblack";
+  src: url("./fonts/aileronmaxed/aileron-black-webfont.woff2") format("woff2"),
+    url("./fonts/aileronmaxed/aileron-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aileronheavy";
+  src: url("./fonts/aileronmaxed/aileron-heavy-webfont.woff2") format("woff2"),
+    url("./fonts/aileronmaxed/aileron-heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aileronsemibold";
+  src: url("./fonts/aileronmaxed/aileron-semibold-webfont.woff2")
+      format("woff2"),
+    url("./fonts/aileronmaxed/aileron-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Raleway //
+
+@font-face {
+  font-family: "ralewaybold";
+  src: url("./fonts/ralewaymaxed/raleway-bold-webfont.woff2") format("woff2"),
+    url("./fonts/ralewaymaxed/raleway-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewayextrabold";
+  src: url("./fonts/ralewaymaxed/raleway-extrabold-webfont.woff2")
+      format("woff2"),
+    url("./fonts/ralewaymaxed/raleway-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewayheavy";
+  src: url("./fonts/ralewaymaxed/raleway-heavy-webfont.woff2") format("woff2"),
+    url("./fonts/ralewaymaxed/raleway-heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaylight";
+  src: url("./fonts/ralewaymaxed/raleway-light-webfont.woff2") format("woff2"),
+    url("./fonts/ralewaymaxed/raleway-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewaymedium";
+  src: url("./fonts/ralewaymaxed/raleway-medium-webfont.woff2") format("woff2"),
+    url("./fonts/ralewaymaxed/raleway-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ralewayregular";
+  src: url("./fonts/ralewaymaxed/raleway-regular-webfont.woff2") format("woff2"),
+    url("./fonts/ralewaymaxed/raleway-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: $white;
+}
+
+.container {
+  width: 88%;
+  margin: 0 auto;
+}

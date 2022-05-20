@@ -1,0 +1,61 @@
+@import "../../CSS/variables";
+
+.skills-page {
+  background: #efefef;
+  border-top: 1.4px solid $light-gray;
+  border-bottom: 1.4px solid $light-gray;
+
+  .skill-section {
+    margin-bottom: 50px;
+
+    h1 {
+      font-family: ubuntubold;
+      text-transform: uppercase;
+      font-size: 4.5rem;
+      margin: 32px 0 7px 0;
+    }
+
+    .sub-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      article.skills-para {
+        font-family: ubunturegular;
+        font-size: 1.6rem;
+        width: 50%;
+        line-height: 2.04rem;
+        color: rgba(44, 44, 44, 0.79);
+
+        strong {
+          font-family: ubuntubold;
+          color: rgb(58, 58, 58);
+        }
+
+        p {
+          margin-top: 6px;
+          font-size: 111%;
+        }
+
+        ul.skills-list {
+          position: relative;
+          left: 25px;
+          margin: 10px 0;
+          display: flex;
+          width: 75%;
+          justify-content: space-between;
+          font-family: ubuntulight;
+          color: rgba($color: #000000, $alpha: 0.72851);
+
+          .skill {
+            margin: 6px 0;
+          }
+        }
+      }
+
+      .skills-image img {
+        width: 520px;
+      }
+    }
+  }
+}
