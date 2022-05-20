@@ -9,18 +9,15 @@ Website can be seen on [github pages](https://saabk.github.io/portfolio/)
 - **HTML 5**
 - **CSS 3**
 - **JAVASCRIPT ES 6**
+- **React V18**
 
-## V2.0.0
+## V2.1.0
 
 ### Additions:
 
-- **Improved Design**
-- **New Colors**
-- **Improved Typography**
-- **More Biography**
-- **Matching Images**
-- **Contact Me Form**
-- **Improved Navbar**
+- **React Added**
+- **Code Simplified**
+- **Better Folder Structure**
 
 ### Problems:
 
