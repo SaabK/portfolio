@@ -10,19 +10,17 @@ Website can be seen on [github pages](https://saabk.github.io/portfolio/)
 - **CSS 3**
 - **JAVASCRIPT ES 6**
 - **React V18**
+- **EmailJS**
 
-## V2.1.0
+## V2.2.0
 
 ### Additions:
 
-- **React Added**
-- **Code Simplified**
-- **Better Folder Structure**
+- **Contact Form Works**
 
 ### Problems:
 
 - **No Personal Image**
-- **Contact Form Does Not Work**
 - **Not Responsive**
 - **Fiverr Icon does not have a link**
 - **No Modal for Fiverr Icon**
