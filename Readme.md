@@ -6,6 +6,8 @@ Website can be seen on [github pages](https://saabk.github.io/portfolio/)
 
 ## **V2.3.0**
 
+Minor Changes were done.
+
 ## **Technologies Used**
 
 - HTML 5

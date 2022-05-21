@@ -18,9 +18,12 @@ function Form() {
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
+        .min(3, "Must be atleast 3 characters")
         .max(15, "Must be less than 15 characters")
         .required("Required"),
-      lastName: Yup.string().max(15, "Must be less than 15 characters"),
+      lastName: Yup.string()
+        .min(3, "Must be atleast 3 characters")
+        .max(15, "Must be less than 15 characters"),
       email: Yup.string().email("Invalid Email Address"),
     }),
     onSubmit: (values) => {
@@ -67,8 +70,9 @@ function Form() {
             onChange={formik.handleChange}
             value={formik.values.firstName}
             onBlur={formik.handleBlur}
+            data-testid="firstName"
           />
-          <p>
+          <p data-testid="firstName-error">
             {formik.touched.firstName && formik.errors.firstName ? (
               <span>{formik.errors.firstName}</span>
             ) : null}
@@ -84,9 +88,10 @@ function Form() {
             onChange={formik.handleChange}
             value={formik.values.lastName}
             onBlur={formik.handleBlur}
+            data-testid="lastName"
           />
         </div>
-        <p>
+        <p data-testid="lastName-error">
           {formik.touched.firstName && formik.errors.lastName ? (
             <span>{formik.errors.lastName}</span>
           ) : null}
@@ -104,8 +109,9 @@ function Form() {
           onChange={formik.handleChange}
           value={formik.values.email}
           onBlur={formik.handleBlur}
+          data-testid="email"
         />
-        <p>
+        <p data-testid="email-error">
           {formik.touched.firstName && formik.errors.email ? (
             <span>{formik.errors.email}</span>
           ) : null}
@@ -123,8 +129,9 @@ function Form() {
           rows="10"
           onChange={formik.handleChange}
           value={formik.values.message}
-          onBlur={formik.handleBlur}></textarea>
-        <p>
+          onBlur={formik.handleBlur}
+          data-testid="message"></textarea>
+        <p data-testid="message-error">
           {formik.touched.firstName && formik.errors.message ? (
             <span>{formik.errors.message}</span>
           ) : null}

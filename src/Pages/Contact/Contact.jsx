@@ -12,11 +12,11 @@ function Contact() {
             <div className="contact-info">
               <div className="email">
                 <h2>Email:</h2>
-                <p>AliIsWorking459@gmail.com</p>
+                <p>ContactIbnNaseer@gmail.com</p>
               </div>
-              <div className="phone">
-                <h2>Phone Number:</h2>
-                <p>+1-202-555-0154</p>
+              <div className="insta">
+                <h2>Instagram:</h2>
+                <p>@BakwasBoye</p>
               </div>
               <div className="location">
                 <h1>Based in</h1>
