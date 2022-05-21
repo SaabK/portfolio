@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fe181838.css",
-    "main.js": "/portfolio/static/js/main.3c2f9cdc.js",
+    "main.css": "/portfolio/static/css/main.e3125918.css",
+    "main.js": "/portfolio/static/js/main.c8db6661.js",
     "static/media/BlueBackground.png": "/portfolio/static/media/BlueBackground.caad878519d23f47a6e1.png",
     "static/media/image.png": "/portfolio/static/media/image.fff5526158c56b446aff.png",
     "static/media/Fiverr icon transparent filled green.png": "/portfolio/static/media/Fiverr icon transparent filled green.3ecae463d5fa8d263d6e.png",
@@ -34,11 +34,11 @@
     "static/media/aileron-black-webfont.woff2": "/portfolio/static/media/aileron-black-webfont.b93db53df45e1b8b098b.woff2",
     "static/media/Facebook Icon Colorful.png": "/portfolio/static/media/Facebook Icon Colorful.01a470d813915c298403.png",
     "index.html": "/portfolio/index.html",
-    "main.fe181838.css.map": "/portfolio/static/css/main.fe181838.css.map",
-    "main.3c2f9cdc.js.map": "/portfolio/static/js/main.3c2f9cdc.js.map"
+    "main.e3125918.css.map": "/portfolio/static/css/main.e3125918.css.map",
+    "main.c8db6661.js.map": "/portfolio/static/js/main.c8db6661.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe181838.css",
-    "static/js/main.3c2f9cdc.js"
+    "static/css/main.e3125918.css",
+    "static/js/main.c8db6661.js"
   ]
 }
