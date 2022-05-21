@@ -1,10 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
+import ModalComponent from "./ModalComponent";
 
 function Form() {
   const form = useRef();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [status, setStatus] = useState("");
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -23,19 +27,22 @@ function Form() {
       console.log(values);
       emailjs
         .sendForm(
-          "service_zvdmfi7",
+          "service_zvdmfi7 ",
           "template_07pj3bg",
           form.current,
           "Wm3Ws8XBquAq_Np3c"
         )
         .then(
           (result) => {
-            // Modal here
             console.log(result.text);
+            setIsModalOpen(true);
+            setStatus("success");
           },
           (error) => {
             // Modal here
             console.log(error.text);
+            setIsModalOpen(true);
+            setStatus("error");
           }
         );
     },
@@ -43,6 +50,11 @@ function Form() {
 
   return (
     <form ref={form} className="form" onSubmit={formik.handleSubmit}>
+      <ModalComponent
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        status={status}
+      />
       <div className="sameline">
         <div className="field firstname">
           <label htmlFor="firstname">
@@ -128,5 +140,4 @@ function Form() {
     </form>
   );
 }
-
 export default Form;

@@ -88,7 +88,7 @@
       width: 420px;
       height: 600px;
       border-radius: 10px;
-      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.17564);
+      box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.17564);
 
       .form {
         // display: grid;
@@ -99,6 +99,10 @@
         // grid-template-rows: auto;
         column-gap: 15px;
         place-items: center;
+
+        .modal {
+          height: auto;
+        }
 
         .sameline {
           display: flex;
@@ -171,6 +175,12 @@
           color: $white;
           font-family: aileronsemibold;
           font-size: 1.02rem;
+          cursor: pointer;
+          transition: background-color ease-in 135ms;
+
+          &:hover {
+            background-color: #504de8;
+          }
         }
       }
     }
