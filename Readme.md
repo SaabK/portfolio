@@ -1,12 +1,12 @@
 # Portfolio
 
 This is the Second Version of my Portfolio. It has a completely new design and new look.
-But much of the work is incomplete.
+The Website is still in-progess.
 Website can be seen on [github pages](https://saabk.github.io/portfolio/)
 
-## **V2.3.0**
+## **V2.3.2**
 
-Minor Changes were done.
+Local Icons Replaced With Font Awesome Icons
 
 ## **Technologies Used**
 
@@ -16,17 +16,17 @@ Minor Changes were done.
 - React V18
 - EmailJS
 - React-Modal
+- Font Awesome Icons
 
-### **Additions**:
+### **Additions/Changes**:
 
-- Modal Icon For Form
+- Deleted Fiverr Icon
+- Used Font Awesome Icons
 
 ### **Problems**:
 
 - No Personal Image
 - Not Responsive
-- Fiverr Icon does not have a link
-- No Modal for Fiverr Icon
+- Icons Do Not Match Color Scheme
 - Not Clean Code
-- No React Involved
 - No Logo

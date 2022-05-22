@@ -70,9 +70,8 @@ function Form() {
             onChange={formik.handleChange}
             value={formik.values.firstName}
             onBlur={formik.handleBlur}
-            data-testid="firstName"
           />
-          <p data-testid="firstName-error">
+          <p>
             {formik.touched.firstName && formik.errors.firstName ? (
               <span>{formik.errors.firstName}</span>
             ) : null}
@@ -88,10 +87,9 @@ function Form() {
             onChange={formik.handleChange}
             value={formik.values.lastName}
             onBlur={formik.handleBlur}
-            data-testid="lastName"
           />
         </div>
-        <p data-testid="lastName-error">
+        <p>
           {formik.touched.firstName && formik.errors.lastName ? (
             <span>{formik.errors.lastName}</span>
           ) : null}
@@ -109,9 +107,8 @@ function Form() {
           onChange={formik.handleChange}
           value={formik.values.email}
           onBlur={formik.handleBlur}
-          data-testid="email"
         />
-        <p data-testid="email-error">
+        <p>
           {formik.touched.firstName && formik.errors.email ? (
             <span>{formik.errors.email}</span>
           ) : null}
@@ -129,9 +126,8 @@ function Form() {
           rows="10"
           onChange={formik.handleChange}
           value={formik.values.message}
-          onBlur={formik.handleBlur}
-          data-testid="message"></textarea>
-        <p data-testid="message-error">
+          onBlur={formik.handleBlur}></textarea>
+        <p>
           {formik.touched.firstName && formik.errors.message ? (
             <span>{formik.errors.message}</span>
           ) : null}

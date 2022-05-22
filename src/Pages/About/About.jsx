@@ -1,3 +1,9 @@
+import {
+  faFacebook,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./About.scss";
 
@@ -23,10 +29,10 @@ function About() {
               <ul>
                 <li>
                   <a href="https://github.com/SaabK" target="_blank">
-                    <img
+                    <FontAwesomeIcon
                       className="icon"
-                      src={require("../../Images/icons/Github Icon Transparent Not Filled Black.png")}
-                      alt="github profile"
+                      icon={faGithub}
+                      size="xl"
                     />
                   </a>
                 </li>
@@ -34,10 +40,10 @@ function About() {
                   <a
                     href="https://www.facebook.com/profile.php?id=100073245827769"
                     target="_blank">
-                    <img
+                    <FontAwesomeIcon
                       className="icon"
-                      src={require("../../Images/icons/Facebook Icon Colorful.png")}
-                      alt="facebook profile"
+                      icon={faFacebook}
+                      size="xl"
                     />
                   </a>
                 </li>
@@ -45,21 +51,10 @@ function About() {
                   <a
                     href="https://www.linkedin.com/in/ali-bin-naseer/"
                     target="_blank">
-                    <img
+                    <FontAwesomeIcon
                       className="icon"
-                      src={require("../../Images/icons/LinkedIn icon transparent not filled blue.png")}
-                      alt="LinkedIn Profile"
-                    />
-                  </a>
-                </li>
-                {/* <!-- TODO: Make a modal for this, Coming Soon! --> */}
-                <li>
-                  <a href="#">
-                    <img
-                      className="icon"
-                      src={require("../../Images/icons/Fiverr icon transparent filled green.png")}
-                      alt="Fiverr Profile"
-                      target="_blank"
+                      icon={faLinkedin}
+                      size="xl"
                     />
                   </a>
                 </li>
