@@ -2,19 +2,20 @@ module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
 		'./components/**/*.{js,ts,jsx,tsx}',
+		'./sections/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
 		extend: {
-			padding: {
-				'5px': '5px',
-				'6px': '6px',
-				'15px': '15px',
+			height: {
+				5.5: '1.3125rem',
 			},
 			lineHeight: {
 				5.5: '1.3125rem',
 			},
-			height: {
-				5.5: '1.3125rem',
+			padding: {
+				'5px': '5px',
+				'6px': '6px',
+				'15px': '15px',
 			},
 		},
 		screens: {
@@ -46,15 +47,21 @@ module.exports = {
 			montserratmedium: '"montserratmedium", sans-serif',
 			montserratregular: '"montserratregular", sans-serif',
 			montserratsemibold: '"montserratsemibold", sans-serif',
+			ubuntumedium: '"ubuntumedium", sans-serif',
+			ubunturegular: '"ubunturegular", sans-serif',
+			ubuntubold: '"ubuntubold", sans-serif',
 		},
 		colors: {
 			transparent: 'transparent',
 			current: 'currentColor',
 			darkBlue: '#141C3A',
-			offWhite: '#ECECEC',
+			lightBlue: '#5F7AFB',
+			offWhite: '#EDEDED',
+			prettyWhite: '#F9F9F9',
 		},
 		fontSize: {
 			heading: '1.75rem',
+			subheading: '1.375rem',
 			body: '.875rem',
 		},
 	},
