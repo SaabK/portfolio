@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio - Ibn Naseer's Personal Portfolio
 
-## Getting Started
+## A Personal Portfolio - V0.3
 
-First, run the development server:
+This is a portfolio website made by Ibn Naseer. He is a Full-Stack Web Developer. He loves to code in React.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- A Good Example for a Beginner's Portfolio
+- Using NextJS as Full-Stack Framework
+- A decent looking UI
+- File Structure Practices
+- Responsive Design
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live App
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can checkout the application [here](https://img.freepik.com/free-vector/abstract-coming-soon-background-torn-paper-style_1017-25514.jpg?t=st=1657280228~exp=1657280828~hmac=984d4b8057bdcaa88fdb5f5733c81322f817c4aef0d54c77cbfcfd30c2731551&w=740).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Usage
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To get started, clone the app using this command:<br>
+`git clone https://github.com/SaabK/portfolio.git`
 
-## Learn More
+**OR**
 
-To learn more about Next.js, take a look at the following resources:
+In GitHub CLI:<br>
+`gh repo clone SaabK/portfolio`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To Start the App:<br>
+`npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+Clone the repository and install dependencies using:<br>
+`npm install`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Then open `http://localhost:3000` in your preferred browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### NPM Scripts
+
+Here are some key scripts you'll use during development. Be sure to look to our package.json for a complete list of scripts.
+
+| Script  | Description                   |     |     |     |
+| ------- | ----------------------------- | --- | --- | --- |
+| `start` | Starts the production server  |     |     |     |
+| `build` | Starts the build process      |     |     |     |
+| `dev`   | Starts the development server |     |     |     |
+
+## Known Issues
+
+- No Setup for Desktop
+- No Contact Section
+- Not hosted
