@@ -1,6 +1,6 @@
 # Portfolio - Ibn Naseer's Personal Portfolio
 
-## A Personal Portfolio - V0.3
+## A Personal Portfolio - V0.4
 
 This is a portfolio website made by Ibn Naseer. He is a Full-Stack Web Developer. He loves to code in React.
 
@@ -38,14 +38,14 @@ Then open `http://localhost:3000` in your preferred browser.
 
 Here are some key scripts you'll use during development. Be sure to look to our package.json for a complete list of scripts.
 
-| Script  | Description                   |     |     |     |
-| ------- | ----------------------------- | --- | --- | --- |
-| `start` | Starts the production server  |     |     |     |
-| `build` | Starts the build process      |     |     |     |
-| `dev`   | Starts the development server |     |     |     |
+| Script  | Description                   |
+| ------- | ----------------------------- |
+| `start` | Starts the production server  |
+| `build` | Starts the build process      |
+| `dev`   | Starts the development server |
 
 ## Known Issues
 
 - No Setup for Desktop
-- No Contact Section
+- No Contact Information
 - Not hosted

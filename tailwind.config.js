@@ -55,9 +55,11 @@ module.exports = {
 			transparent: 'transparent',
 			current: 'currentColor',
 			darkBlue: '#141C3A',
+			middleBlue: '#202744',
 			lightBlue: '#5F7AFB',
 			offWhite: '#EDEDED',
 			prettyWhite: '#F9F9F9',
+			darkGrey: '#333',
 		},
 		fontSize: {
 			heading: '1.75rem',
