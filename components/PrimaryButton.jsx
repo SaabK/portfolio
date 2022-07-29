@@ -16,7 +16,7 @@ PrimaryButton.propTypes = {
 	rounded: PropTypes.bool,
 };
 
-PrimaryButton.propTypes = {
+PrimaryButton.defaultProps = {
 	rounded: false,
 };
 
