@@ -5,6 +5,17 @@ module.exports = {
 		'./sections/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
+		container: {
+			center: true,
+			padding: {
+				DEFAULT: '.25rem',
+				xsm: '.25rem',
+				sm: '1rem',
+				lg: '2rem',
+				xl: '4rem',
+				'2xl': '6rem',
+			},
+		},
 		extend: {
 			height: {
 				5.5: '1.3125rem',

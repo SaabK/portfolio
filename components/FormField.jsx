@@ -17,7 +17,7 @@ function FormField({ name, type, id, fieldType }) {
 					type={type}
 					name={name}
 					id={id}
-					className={`bg-[${bgColor}] rounded-[3px] px-[.875rem] py-[.375rem] h-[40px] font-ubuntumedium text-[${txtColor}] focus:outline-none`}
+					className={`bg-[${bgColor}] rounded-[3px] px-[.875rem] py-[.375rem] h-[40px] font-ubunturegular text-[${txtColor}] text-[13px] focus:outline-none`}
 				/>
 			) : (
 				<textarea
@@ -25,7 +25,7 @@ function FormField({ name, type, id, fieldType }) {
 					id={id}
 					cols='30'
 					rows='5'
-					className={`bg-[${bgColor}] rounded-[3px] px-[.875rem] py-[.375rem] font-ubuntumedium text-[${txtColor}] resize-none focus:outline-none`}></textarea>
+					className={`bg-[${bgColor}] rounded-[3px] px-[.875rem] py-[.375rem] font-ubunturegular text-[${txtColor}] resize-none text-[13px] focus:outline-none`}></textarea>
 			)}
 		</div>
 	);

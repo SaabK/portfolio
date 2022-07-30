@@ -9,7 +9,7 @@ function Contact() {
 		<section className='bg-lightBlue bg-opacity-[0.07] w-full mt-[7.5rem]'>
 			<div className='container mx-auto'>
 				<div>
-					<div className='flex flex-col py-6 h-[157px] justify-between'>
+					<div className='flex flex-col py-6 h-auto justify-between'>
 						<h1 className='font-ubuntubold text-heading text-darkBlue'>
 							Let&apos;s connect
 						</h1>
