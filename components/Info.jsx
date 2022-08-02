@@ -2,11 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-function Info({ icon, platform, contact }) {
+function Info({ icon, platform, contact, height, width }) {
 	return (
 		<div className='flex justify-start items-center'>
 			<div>
-				<Image src={icon} alt={`${platform} icon`} height='20px' width='20px' />
+				<Image
+					src={icon}
+					alt={`${platform} icon`}
+					height={height}
+					width={width}
+				/>
 			</div>
 			<div className='flex flex-col justify-between h-auto px-6'>
 				<h3 className='font-ubuntubold text-body text-lightBlue uppercase'>
@@ -23,6 +28,13 @@ function Info({ icon, platform, contact }) {
 Info.propTypes = {
 	platform: PropTypes.string.isRequired,
 	contact: PropTypes.string.isRequired,
+	height: PropTypes.string,
+	width: PropTypes.string,
+};
+
+Info.defaultProps = {
+	height: '20px',
+	width: '20px',
 };
 
 export default Info;

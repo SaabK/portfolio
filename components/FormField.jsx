@@ -6,10 +6,13 @@ function FormField({ name, type, id, fieldType }) {
 	const txtColor = '#565b72';
 
 	return (
-		<div className='flex flex-col justify-between'>
+		<div
+			className={`flex flex-col justify-between ${
+				fieldType === 'input' ? 'md:w-[47%]' : ''
+			}`}>
 			<label
 				htmlFor={name}
-				className='font-ubuntubold text-[0.8125rem] tracking-wider uppercase text-[#000] opacity-[0.65]'>
+				className='font-ubuntubold text-[0.8125rem] lg:text-body tracking-wider uppercase text-[#000] opacity-[0.65] inline'>
 				{name}
 			</label>
 			{fieldType === 'input' ? (

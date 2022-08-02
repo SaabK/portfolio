@@ -1,6 +1,6 @@
 # Portfolio - Ibn Naseer's Personal Portfolio
 
-## A Personal Portfolio - V0.5
+## A Personal Portfolio - V0.6
 
 This is a portfolio website made by Ibn Naseer. He is a Full-Stack Web Developer. He loves to code in React.
 
@@ -46,6 +46,6 @@ Here are some key scripts you'll use during development. Be sure to look to our 
 
 ## Known Issues
 
-- No Setup for Desktop
+- No Projects
 - Form doesn't work
 - Not hosted
