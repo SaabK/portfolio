@@ -25,7 +25,7 @@ var external_react_ = __webpack_require__(689);
 
 function Footer() {
     return /*#__PURE__*/ jsx_runtime_.jsx("footer", {
-        className: "relative bg-lightBlue bg-opacity-10",
+        className: "w-full bg-lightBlue bg-opacity-10",
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
             className: "flex flex-col justify-center items-center h-[1.875rem] lg:h-[2.25rem]",
             children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
@@ -56,7 +56,8 @@ function Navbar() {
 
 
 function Layout({ children  }) {
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("main", {
+        className: "relative",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(components_Navbar, {}),
             children,
