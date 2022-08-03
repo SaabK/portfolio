@@ -1,8 +1,8 @@
 # Portfolio - Ibn Naseer's Personal Portfolio
 
-## A Personal Portfolio - V0.6
+## A Personal Portfolio - V1
 
-This is a portfolio website made by Ibn Naseer. He is a Full-Stack Web Developer. He loves to code in React.
+This is the first official version of this portfolio website.
 
 - A Good Example for a Beginner's Portfolio
 - Using NextJS as Full-Stack Framework
@@ -47,5 +47,4 @@ Here are some key scripts you'll use during development. Be sure to look to our 
 ## Known Issues
 
 - No Projects
-- Form doesn't work
-- Not hosted
+- No Form Validation
