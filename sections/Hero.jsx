@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import PrimaryButton from '../components/PrimaryButton';
 import SecondaryButton from '../components/SecondaryButton';
@@ -16,8 +17,17 @@ function Hero() {
 				</div>
 
 				<div className='flex justify-between w-[13.25rem] mx-auto py-[14px] lg:w-[21.875rem]'>
-					<PrimaryButton>Hire Me</PrimaryButton>
-					<SecondaryButton>My Work</SecondaryButton>
+					<Link href='/hire-me'>
+						<a>
+							<PrimaryButton>Hire Me</PrimaryButton>
+						</a>
+					</Link>
+
+					<Link href='/my-work'>
+						<a>
+							<SecondaryButton>My Work</SecondaryButton>
+						</a>
+					</Link>
 				</div>
 			</section>
 		</div>

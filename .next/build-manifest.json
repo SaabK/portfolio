@@ -1,40 +1,44 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills-0d1b80a048d4787e.js"
+    "static/chunks/polyfills.js"
   ],
-  "devFiles": [],
-  "ampDevFiles": [],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [
+    "static/chunks/webpack.js",
+    "static/chunks/amp.js"
+  ],
   "lowPriorityFiles": [
-    "static/UMKebN1gbLvDcUFTBs4kk/_buildManifest.js",
-    "static/UMKebN1gbLvDcUFTBs4kk/_ssgManifest.js"
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack-6c5d8c68d7d3b7e0.js",
-      "static/chunks/framework-7dc8a65f4a0cda33.js",
-      "static/chunks/main-25e5079ab4bd6ecd.js",
-      "static/css/6c7987e2821e600c.css",
-      "static/chunks/pages/index-3e6d6cf8b79bb0a3.js"
-    ],
-    "/404": [
-      "static/chunks/webpack-6c5d8c68d7d3b7e0.js",
-      "static/chunks/framework-7dc8a65f4a0cda33.js",
-      "static/chunks/main-25e5079ab4bd6ecd.js",
-      "static/chunks/pages/404-41d658d46522210d.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
     ],
     "/_app": [
-      "static/chunks/webpack-6c5d8c68d7d3b7e0.js",
-      "static/chunks/framework-7dc8a65f4a0cda33.js",
-      "static/chunks/main-25e5079ab4bd6ecd.js",
-      "static/css/45f31eeefc72ab27.css",
-      "static/chunks/pages/_app-827ab431ad1b22b5.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_app.js"
     ],
     "/_error": [
-      "static/chunks/webpack-6c5d8c68d7d3b7e0.js",
-      "static/chunks/framework-7dc8a65f4a0cda33.js",
-      "static/chunks/main-25e5079ab4bd6ecd.js",
-      "static/chunks/pages/_error-a4ba2246ff8fb532.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
+    ],
+    "/hire-me": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/hire-me.js"
+    ],
+    "/my-work": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/my-work.js"
     ]
   },
   "ampFirstPages": []
