@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import project from '../public/gif.gif';
+import project from '../public/URLProject.gif';
 
 function About() {
 	return (
@@ -37,16 +37,16 @@ function About() {
 						</div>
 					</div>
 
-					<div className='flex flex-col items-center w-fit my-6 absolute -bottom-[7rem]'>
-						<div className='w-[220px] h-[140px]'>
+					<div className='flex flex-col items-center justify-between w-fit my-6 absolute -bottom-[7rem]'>
+						<div className='w-[240px] h-[150px] shadow-lg'>
 							<Image
 								src={project}
 								layout='fill'
 								alt='A Url Shortener Project'
 							/>
 						</div>
-						<h3 className='text-subheading font-ubuntubold leading-3 tracking-wide text-lightBlue self-start relative mt-2'>
-							Random Gif
+						<h3 className='text-subheading font-ubuntubold leading-3 tracking-wide text-lightBlue self-start relative top-3'>
+							URL Shortener
 						</h3>
 					</div>
 				</section>

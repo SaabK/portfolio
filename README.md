@@ -1,6 +1,6 @@
 # Portfolio - Ibn Naseer's Personal Portfolio
 
-## A Personal Portfolio - V1.2
+## A Personal Portfolio - V1.3
 
 This is the first official version of this portfolio website.
 
