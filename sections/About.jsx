@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import project from '../public/URLProject.gif';
+import project from '../public/URLShortenerProject.gif';
 
 function About() {
 	return (
@@ -36,7 +36,7 @@ function About() {
 							</p>
 						</div>
 					</div>
-
+					{/* Todo: Add a link to that project on the GIF. */}
 					<div className='flex flex-col items-center justify-between w-fit my-6 absolute -bottom-[7rem]'>
 						<div className='w-[240px] h-[150px] shadow-lg'>
 							<Image

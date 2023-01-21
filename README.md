@@ -1,6 +1,6 @@
 # Portfolio - Ibn Naseer's Personal Portfolio
 
-## A Personal Portfolio - V1.3
+## A Personal Portfolio - V1.2
 
 This is the first official version of this portfolio website.
 
@@ -12,7 +12,7 @@ This is the first official version of this portfolio website.
 
 ## Live App
 
-You can checkout the application [here](https://img.freepik.com/free-vector/abstract-coming-soon-background-torn-paper-style_1017-25514.jpg?t=st=1657280228~exp=1657280828~hmac=984d4b8057bdcaa88fdb5f5733c81322f817c4aef0d54c77cbfcfd30c2731551&w=740).
+You can checkout the application [here](https://ibn-naseer.vercel.app/).
 
 ## Usage
 
