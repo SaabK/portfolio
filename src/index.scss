@@ -1,0 +1,24 @@
+@import "css/variables.scss";
+@import url("./css/fonts.scss");
+@import url("./css/utilities.scss");
+
+:root {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $fs-body;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

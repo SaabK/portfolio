@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+@for $i from 1 through 20 {
+  .p-#{$i} {
+    padding: #{$i * 4}px;
+  }
+
+  .px-#{$i} {
+    padding-inline: #{$i * 4}px;
+  }
+
+  .py-#{$i} {
+    padding-block: #{$i * 4}px;
+  }
+
+  .m-#{$i} {
+    margin: #{$i * 4}px;
+  }
+
+  .mx-#{$i} {
+    margin-inline: #{$i * 4}px;
+  }
+
+  .my-#{$i} {
+    margin-block: #{$i * 4}px;
+  }
+}
+
+$colors: (
+  yellow: $yellow,
+  black: $black,
+  lightBlack: $light-black,
+  blueishBlack: $blueish-black,
+  white: $white,
+  grey: $grey,
+);
+
+@each $name, $value in $colors {
+  .text-#{$name} {
+    color: $value;
+  }
+
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
