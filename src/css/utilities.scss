@@ -27,12 +27,12 @@
 }
 
 $colors: (
-  yellow: $yellow,
-  black: $black,
-  lightBlack: $light-black,
-  blueishBlack: $blueish-black,
-  white: $white,
-  grey: $grey,
+  "yellow": $yellow,
+  "black": $black,
+  "lightBlack": $light-black,
+  "blueishBlack": $blueish-black,
+  "white": $white,
+  "grey": $grey,
 );
 
 @each $name, $value in $colors {
@@ -43,4 +43,77 @@ $colors: (
   .bg-#{$name} {
     background-color: $value;
   }
+}
+
+$pos: (
+  "absolute": "absolute",
+  "relative": "relative",
+  "fixed": "fixed",
+);
+
+@each $name, $val in $pos {
+  .#{$name} {
+    position: $val;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-overlay {
+}
+
+.to-bottom {
+}
+
+.to-right {
+}
+
+.inset-0 {
+  inset: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.text-xs {
+  font-size: $fs-5;
+}
+
+.text-sm {
+  font-size: $fs-4;
+}
+
+.text-center {
+  text-align: center;
 }

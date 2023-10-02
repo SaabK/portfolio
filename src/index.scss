@@ -1,6 +1,6 @@
 @import "css/variables.scss";
-@import url("./css/fonts.scss");
-@import url("./css/utilities.scss");
+@import "css/fonts.scss";
+@import "css/utilities.scss";
 
 :root {
   font-size: 10px;
@@ -16,6 +16,7 @@
 
 body {
   font-size: $fs-body;
+  font-family: $ff-regular;
 }
 
 img {
