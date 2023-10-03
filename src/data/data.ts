@@ -10,7 +10,7 @@ export const navItems = [
     image: home,
   },
   {
-    name: "About me",
+    name: "About",
     href: "#about",
     image: person,
   },
@@ -20,7 +20,7 @@ export const navItems = [
     image: laptop,
   },
   {
-    name: "Contact me",
+    name: "Contact",
     href: "#contact",
     image: phone,
   },

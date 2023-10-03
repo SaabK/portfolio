@@ -3,11 +3,11 @@ import email from "../assets/icons/email.svg";
 
 function Topbar() {
   return (
-    <header className="topbar p-6 bg-black">
+    <header className="topbar p-6 bg-black flex items-center justify-between">
       <img src={logo} />
-      <p className="wordmark">
+      <span className="wordmark">
         Ali <span className="text-yellow">Bin Naseer</span>
-      </p>
+      </span>
       <img src={email} alt="Let's chat" />
     </header>
   );

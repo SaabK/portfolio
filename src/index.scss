@@ -1,5 +1,5 @@
-@import "css/variables.scss";
 @import "css/fonts.scss";
+@import "css/variables.scss";
 @import "css/utilities.scss";
 
 :root {
@@ -17,9 +17,172 @@
 body {
   font-size: $fs-body;
   font-family: $ff-regular;
+  color: $white;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+h1 {
+  font-size: $fs-1;
+  font-family: $ff-extrabold;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: $fs-2;
+  font-family: $ff-bold;
+}
+
+h3 {
+}
+
+p.body {
+  font-size: $fs-body;
+  color: $grey;
+}
+
+.navbar {
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  left: 2.25rem;
+  z-index: 10;
+
+  ul {
+    border-radius: 9999px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 1.75rem 0.75rem;
+    position: relative;
+    background: $light-black;
+  }
+}
+.nav-link {
+  padding: 1rem;
+  border-radius: 50%;
+  background: transparent;
+  &.active {
+    background: $blueish-black;
+  }
+}
+
+// Topbar
+
+.wordmark {
+  font-family: $ff-bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+// Home/Hero section
+
+#home {
+  padding-top: 9rem;
+  padding-bottom: 15rem;
+
+  .container {
+    gap: 12rem;
+
+    article *:not(:first-child) {
+      margin-block-end: 2.75rem;
+
+      h1 {
+        margin-block-end: 0.5rem;
+      }
+
+      .body {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.tagline {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-family: $ff-light;
+  font-weight: 100;
+}
+
+.hero-image {
+  min-width: 400px;
+  height: auto;
+  position: relative;
+  z-index: 3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle at center, $white 0%, transparent 70%);
+    opacity: 0.3;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+// About section
+
+#about {
+  background: url("./assets/images/history.jpg");
+  width: auto;
+  height: auto;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  padding-block: 9.6rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient($overlay-gradient-start, $overlay-gradient-end);
+    opacity: 0.91;
+    z-index: -1;
+  }
+}
+
+.timeline {
+  position: relative;
+  top: -15.8rem;
+}
+
+.vertical-timeline {
+  padding: 15em 0 !important;
+}
+
+.experience-icon {
+  width: 70%;
+  height: 70%;
+}
+
+// Skills Section
+
+#skills {
+  position: absolute;
+  width: max-content;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      list-style-type: none;
+    }
+  }
 }

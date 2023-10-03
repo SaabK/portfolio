@@ -46,9 +46,9 @@ $colors: (
 }
 
 $pos: (
-  "absolute": "absolute",
-  "relative": "relative",
-  "fixed": "fixed",
+  absolute: absolute,
+  relative: relative,
+  fixed: fixed,
 );
 
 @each $name, $val in $pos {
@@ -116,4 +116,25 @@ $pos: (
 
 .text-center {
   text-align: center;
+}
+
+.container {
+  width: 82.5% !important;
+  margin-inline: auto;
+}
+
+.btn {
+  padding: 1.2rem 2.5rem;
+  background: transparent;
+  color: $black;
+  font-family: $ff-medium;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 9999px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: $yellow;
 }
