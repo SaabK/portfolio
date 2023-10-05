@@ -13,6 +13,14 @@
     padding-block: #{$i * 4}px;
   }
 
+  .pt-#{$i} {
+    padding-block-start: #{$i * 4}px;
+  }
+
+  .pb-#{$i} {
+    padding-block-end: #{$i * 4}px;
+  }
+
   .m-#{$i} {
     margin: #{$i * 4}px;
   }
@@ -24,6 +32,10 @@
   .my-#{$i} {
     margin-block: #{$i * 4}px;
   }
+
+  .gap-#{$i} {
+    gap: #{$i * 4}px;
+  }
 }
 
 $colors: (
@@ -31,6 +43,7 @@ $colors: (
   "black": $black,
   "lightBlack": $light-black,
   "blueishBlack": $blueish-black,
+  "darkBlack": $dark-black,
   "white": $white,
   "grey": $grey,
 );
@@ -81,6 +94,9 @@ $pos: (
   justify-content: center;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
 .bg-overlay {
 }
 
@@ -106,12 +122,19 @@ $pos: (
   height: 100%;
 }
 
-.text-xs {
-  font-size: $fs-5;
+.body {
+  font-size: $fs-body;
+  color: $grey;
 }
 
 .text-sm {
   font-size: $fs-4;
+  font-family: $ff-medium;
+}
+
+.text-xs {
+  font-size: $fs-5;
+  font-family: $ff-light;
 }
 
 .text-center {

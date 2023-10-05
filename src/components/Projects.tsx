@@ -3,12 +3,16 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <section id="projects">
-      <span className="text-xs">my work</span>
-      <h2>Projects</h2>
-      {projects.map((project, index) => (
-        <ProjectCard project={project} key={index} />
-      ))}
+    <section id="projects" className="bg-lightBlack">
+      <div className="container">
+        <span className="tagline">MY WORK</span>
+        <h2>Projects</h2>
+        <div className="my-projects">
+          {projects.map((project, index) => (
+            <ProjectCard project={project} key={index} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

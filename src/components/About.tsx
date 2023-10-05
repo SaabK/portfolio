@@ -6,7 +6,7 @@ import Skills from "./Skills";
 function About() {
   return (
     <section id="about" className="">
-      <div className="container">
+      <div className="container relative">
         <h2>About Me</h2>
 
         <VerticalTimeline lineColor="#ebff00" className="timeline">

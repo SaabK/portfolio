@@ -1,5 +1,5 @@
 import { navItems } from "../data/data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   const [current, setCurrent] = useState("");
@@ -9,10 +9,11 @@ function Navbar() {
   const navLi = document.querySelectorAll(".nav-link");
 
   // Logic for changing active nav element on scroll
-  window.onscroll = () => {
+  // TODO: FIX THIS NAVIGATION BY WATCHING A TUTORIAL
+  function navigate() {
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
-      if (scrollY >= sectionTop - 120) {
+      if (scrollY >= sectionTop - 70) {
         setCurrent(section.getAttribute("id")!);
       }
     });
@@ -23,6 +24,10 @@ function Navbar() {
         li.classList.add("active");
       }
     });
+  }
+
+  window.onscroll = () => {
+    navigate();
   };
 
   return (

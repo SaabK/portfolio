@@ -128,7 +128,7 @@ export const projects: project[] = [
     name: "Easybank",
     image: easybankImage,
     description:
-      "Easybank is the next generation of digital banking. It has the potential to change the future of banking. This is a landing page for the website of Easy bank.",
+      "Easybank is the next generation of digital banking. It has the potential to change the future of banking. This is a landing page for the website of Easy bank, that contains information related to it.",
     tags: ["react", "tailwind"],
   },
   {
@@ -136,7 +136,7 @@ export const projects: project[] = [
     image: azadchaiwalaImage,
     description:
       "Azad Chaiwala is a Pakistani influencer and Businessman. He has a website for his courses of his institute. I redesigned and made the above website for him that has better UI and animations.",
-    tags: ["react", "tailwind"],
+    tags: ["react", "tailwind", "framer-motion"],
   },
   {
     name: "Retail Store Software",
