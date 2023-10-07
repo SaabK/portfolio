@@ -303,6 +303,10 @@ h4 {
   .container {
     position: relative;
     z-index: 1;
+
+    & > h1 {
+      display: none;
+    }
   }
 
   .social-icons {
@@ -419,5 +423,169 @@ h4 {
   p {
     font-size: 1.2rem;
     font-family: $ff-semibold;
+  }
+}
+
+// Mobile Version
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 5.6rem;
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  // Navbar
+  .navbar {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+
+    ul {
+      flex-direction: row;
+      width: inherit;
+      justify-content: space-between;
+      border-radius: 0;
+
+      padding-inline: 4rem;
+    }
+  }
+
+  // Topbar
+
+  #topbar {
+    position: relative;
+    top: 7.5rem;
+
+    .logo {
+      width: 4rem;
+      height: auto;
+    }
+
+    .wordmark {
+      font-size: 1.7rem;
+    }
+
+    .chat {
+      width: 4rem;
+      height: auto;
+    }
+  }
+
+  // Home/Hero Section
+
+  #home {
+    padding-block-start: 12rem;
+    padding-block-end: 10rem;
+
+    article {
+      h1 {
+        margin-block-end: 2rem !important;
+      }
+      .body {
+        width: 100% !important;
+      }
+    }
+
+    .hero-image {
+      display: none;
+    }
+  }
+
+  // About Section
+
+  #about {
+    h2 {
+      text-align: center;
+    }
+
+    #points {
+      li {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .timeline::before {
+    height: 111%;
+  }
+
+  .vertical-timeline {
+    padding: 13em 0 !important;
+    padding-bottom: 0em !important;
+  }
+
+  // Skills Section
+
+  #skills {
+    display: none;
+    ul {
+      flex-wrap: wrap;
+      gap: 3rem;
+      justify-content: center;
+    }
+  }
+
+  // Projects Section
+
+  .my-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    max-width: max-content;
+
+    .project-image {
+      img {
+        height: auto;
+      }
+    }
+  }
+
+  .project-content {
+    .body {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  // Contact Section
+
+  #contact {
+    background-position: right center;
+    .container {
+      flex-direction: column;
+      gap: 2rem;
+
+      & > *:not(:first-child) {
+        align-self: center;
+      }
+
+      & > h1 {
+        display: block;
+      }
+
+      #form {
+        order: 1;
+        width: 100%;
+
+        .form-body {
+          width: 100%;
+        }
+      }
+
+      .information {
+        order: 2;
+        gap: 2rem;
+
+        h1 {
+          display: none;
+        }
+      }
+    }
   }
 }

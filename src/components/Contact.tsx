@@ -5,6 +5,9 @@ function Contact() {
   return (
     <section id="contact">
       <div className="container flex justify-between">
+        <h1>
+          Let's <span className="text-yellow">Talk</span>
+        </h1>
         <div className="information flex-1">
           <h1>
             Let's <span className="text-yellow">Talk</span>

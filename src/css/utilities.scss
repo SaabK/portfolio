@@ -158,6 +158,7 @@ $pos: (
   width: fit-content;
   cursor: pointer;
   transition: $transition-1;
+  text-align: center;
 }
 
 .btn:hover,
@@ -167,4 +168,11 @@ $pos: (
 
 .btn-primary {
   background: $yellow;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    width: 90% !important;
+  }
 }

@@ -1,7 +1,7 @@
 $yellow: #ebff00;
 $black: #0a0a0a;
 $light-black: #1f1f1f;
-$blueish-black: #3b3a51;
+$blueish-black: #403f58;
 $dark-black: #0e0e0e;
 $white: #fff;
 $grey: #e8e8e8;
@@ -29,3 +29,6 @@ $fs-body: 1.8rem;
 $section-padding: 8rem;
 
 $transition-1: all 0.3s;
+
+@media (max-width: 480px) {
+}

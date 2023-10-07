@@ -3,12 +3,15 @@ import email from "../assets/icons/email.svg";
 
 function Topbar() {
   return (
-    <header className="topbar p-6 bg-black flex items-center justify-between">
-      <img src={logo} />
+    <header
+      className="p-6 bg-black flex items-center justify-between"
+      id="topbar"
+    >
+      <img src={logo} className="logo" />
       <span className="wordmark">
         Ali <span className="text-yellow">Bin Naseer</span>
       </span>
-      <img src={email} alt="Let's chat" />
+      <img src={email} alt="Let's chat" className="chat" />
     </header>
   );
 }

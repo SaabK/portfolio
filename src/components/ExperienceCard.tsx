@@ -21,7 +21,7 @@ function ExperienceCard({ experience }: IExperienceCard) {
     >
       <h3>{experience.heading}</h3>
       <span className="text-xs">{experience.sub_heading}</span>
-      <ul className="px-5 pt-3 gap-1 flex flex-col justify-between">
+      <ul className="px-5 pt-3 gap-1 flex flex-col justify-between" id="points">
         {experience.experienceList.map((item, index) => (
           <li key={index} className="text-sm body">
             {item}
