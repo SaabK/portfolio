@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer id="footer">
-      <p className="text-center">Made with ❤️ by Ali Bin Naseer</p>
+    <footer id="footer" className="bg-black">
+      <p className="text-center text-white">Made with ❤️ by Ali Bin Naseer</p>
     </footer>
   );
 }

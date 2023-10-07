@@ -111,7 +111,7 @@ $pos: (
 }
 
 .w-full {
-  width: 100%;
+  width: 100% !important;
 }
 
 .w-half {
@@ -147,6 +147,7 @@ $pos: (
 }
 
 .btn {
+  position: relative;
   padding: 1.2rem 2.5rem;
   background: transparent;
   color: $black;
@@ -156,6 +157,12 @@ $pos: (
   border-radius: 9999px;
   width: fit-content;
   cursor: pointer;
+  transition: $transition-1;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.85;
 }
 
 .btn-primary {
