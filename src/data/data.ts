@@ -159,30 +159,36 @@ export const socials: social[] = [
     name: "YouTube",
     href: "",
     icon: youtube,
+    color: "#FF0000",
   },
   {
     name: "Facebook",
     href: "",
     icon: facebook,
+    color: "#1877F2",
   },
   {
     name: "Instagram",
     href: "",
     icon: instagram,
+    color: "#f09433 ",
   },
   {
     name: "Github",
     href: "",
     icon: github,
+    color: "#7c007c",
   },
   {
     name: "Twitter",
     href: "",
     icon: twitter,
+    color: "#1DA1F2",
   },
   {
     name: "Fiverr",
     href: "",
     icon: fiverr,
+    color: "#00B14F",
   },
 ];

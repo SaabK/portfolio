@@ -8,3 +8,4 @@ A portfolio website for Ali Bin Naseer, who is a web developer and a content cre
 - Working form
 - Contact me button on header
 - Add arrow button on each project card using psuedo elements
+- Add social links in data/data.ts

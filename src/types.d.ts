@@ -16,6 +16,7 @@ export interface social {
   name: string;
   href: string;
   icon: string;
+  color: string;
 }
 
 export interface IExperienceCard {

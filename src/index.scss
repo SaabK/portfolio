@@ -315,6 +315,8 @@ h4 {
     gap: 1.6rem;
 
     li {
+      position: relative;
+      z-index: 1;
       width: 5rem;
       height: 5rem;
       background: white;
@@ -333,13 +335,14 @@ h4 {
         height: inherit;
 
         img {
+          position: relative;
+          z-index: 5;
           width: 65%;
-          color: red;
         }
       }
 
       &:hover {
-        background: black;
+        // background: red;
       }
     }
   }
@@ -581,6 +584,8 @@ h4 {
       .information {
         order: 2;
         gap: 2rem;
+        padding-inline: 3rem;
+        align-items: center;
 
         h1 {
           display: none;
