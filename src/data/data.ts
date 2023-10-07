@@ -157,37 +157,37 @@ import fiverr from "../assets/icons/fiverr.svg";
 export const socials: social[] = [
   {
     name: "YouTube",
-    href: "",
+    href: "https://www.youtube.com/@AliBinNaseer/featured",
     icon: youtube,
     color: "#FF0000",
   },
   {
     name: "Facebook",
-    href: "",
+    href: "https://www.facebook.com/profile.php?id=100073245827769",
     icon: facebook,
     color: "#1877F2",
   },
   {
     name: "Instagram",
-    href: "",
+    href: "https://www.instagram.com/bakwasboye/",
     icon: instagram,
     color: "#f09433 ",
   },
   {
     name: "Github",
-    href: "",
+    href: "https://github.com/SaabK",
     icon: github,
     color: "#7c007c",
   },
   {
     name: "Twitter",
-    href: "",
+    href: "https://twitter.com/AliBinTweets",
     icon: twitter,
     color: "#1DA1F2",
   },
   {
     name: "Fiverr",
-    href: "",
+    href: "https://www.fiverr.com/ali_ibn_naseer?up_rollout=true",
     icon: fiverr,
     color: "#00B14F",
   },
