@@ -130,6 +130,7 @@ export const projects: project[] = [
     description:
       "Easybank is the next generation of digital banking. It has the potential to change the future of banking. This is a landing page for the website of Easy bank, that contains information related to it.",
     tags: ["react", "tailwind"],
+    href: "https://main--resonant-choux-2bcd9e.netlify.app/",
   },
   {
     name: "Azad Chaiwala",
@@ -137,6 +138,7 @@ export const projects: project[] = [
     description:
       "Azad Chaiwala is a Pakistani influencer and Businessman. He has a website for his courses of his institute. I redesigned and made the above website for him that has better UI and animations.",
     tags: ["react", "tailwind", "framer-motion"],
+    href: "https://saabk.github.io/Azad_Chaiwala_Institute/",
   },
   {
     name: "Retail Store Software",
@@ -144,6 +146,7 @@ export const projects: project[] = [
     description:
       "Retail store software is a webapp where retail store employees can calculate the total by scanning the item or entering the barcode. It helps them to perform calculations at very fast speed.",
     tags: ["react", "tailwind"],
+    href: "https://loquacious-heliotrope-cdd3c8.netlify.app/",
   },
 ];
 
@@ -153,6 +156,7 @@ import instagram from "../assets/icons/instagram.svg";
 import github from "../assets/icons/github.svg";
 import twitter from "../assets/icons/twitter-circle.svg";
 import fiverr from "../assets/icons/fiverr.svg";
+import linkedin from "../assets/icons/linkedin.svg";
 
 export const socials: social[] = [
   {
@@ -190,5 +194,11 @@ export const socials: social[] = [
     href: "https://www.fiverr.com/ali_ibn_naseer?up_rollout=true",
     icon: fiverr,
     color: "#00B14F",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/ali-bin-naseer",
+    icon: linkedin,
+    color: "#0077B5",
   },
 ];

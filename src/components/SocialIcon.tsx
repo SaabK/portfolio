@@ -12,17 +12,19 @@ function SocialIcon({ social }: ISocialIcon) {
   };
 
   return (
-    <li
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{
-        background: getBackgroundColor(),
-      }}
-    >
-      <a href={social.href}>
-        <img src={social.icon} alt={social.name} />
-      </a>
-    </li>
+    <>
+      <li
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        style={{
+          background: getBackgroundColor(),
+        }}
+      >
+        <a href={social.href}>
+          <img src={social.icon} alt={social.name} />
+        </a>
+      </li>
+    </>
   );
 }
 

@@ -4,10 +4,14 @@ function ProjectCard({ project }: IProject) {
   return (
     <div className="project-card">
       <div className="project-image">
-        <img src={project.image} alt={project.name} />
+        <a href={project.href}>
+          <img src={project.image} alt={project.name} />
+        </a>
       </div>
       <div className="project-content">
-        <h3>{project.name}</h3>
+        <h3>
+          <a href={project.href}>{project.name}</a>
+        </h3>
         <p className="text-sm body">{project.description}</p>
         <ul className="tags">
           {project.tags.map((tag, index) => (

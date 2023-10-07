@@ -11,7 +11,9 @@ function Topbar() {
       <span className="wordmark">
         Ali <span className="text-yellow">Bin Naseer</span>
       </span>
-      <img src={email} alt="Let's chat" className="chat" />
+      <a href="mailto:contactibnnaseer@gmail.com">
+        <img src={email} alt="Let's chat" className="chat" />
+      </a>
     </header>
   );
 }

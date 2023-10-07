@@ -10,6 +10,7 @@ export interface project {
   image: string;
   description: string;
   tags: string[];
+  href: string;
 }
 
 export interface social {
