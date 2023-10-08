@@ -21,7 +21,7 @@ function SocialIcon({ social }: ISocialIcon) {
         }}
       >
         <a href={social.href} target="_blank">
-          <img src={social.icon} alt={social.name} />
+          <img src={social.icon} alt={social.name} loading="lazy" />
         </a>
       </li>
     </>

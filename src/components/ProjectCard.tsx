@@ -27,7 +27,7 @@ function ProjectCard({ project, delay }: IProject) {
     >
       <div className="project-image">
         <a href={project.href}>
-          <img src={project.image} alt={project.name} />
+          <img src={project.image} alt={project.name} loading="lazy" />
         </a>
       </div>
       <div className="project-content">
