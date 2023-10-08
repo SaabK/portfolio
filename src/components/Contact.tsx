@@ -71,18 +71,18 @@ function Contact() {
             <article>
               <h4>Contact Information</h4>
               <p>ContactIbnNaseer@gmail.com</p>
-              <p>Mian Channun, Pakistan</p>
+              <p>+92 312 6146204</p>
             </article>
 
             <article>
               <p>
-                Something must go right here in order to fill the space, you
-                know I don't like it empty.
+                I am based in Mian Channun, District Khanewal, Pakistan. And I'm
+                always ready to connect and discuss potential opportunities.
               </p>
             </article>
 
             <article>
-              <p>Again dummy text or something useful here</p>
+              <p>Feel free to message me at any time 😉</p>
             </article>
           </div>
 

@@ -38,9 +38,9 @@ export const experiences: experience[] = [
     sub_heading: "Superior College",
     experienceList: [
       "I’ve been studying computer science in college since 2023.",
-      "The next year, I’ll be able to graduate with my CS Degree from Superior College.",
-      "I don’t know what to write here, so I am just trying to fill it.",
-      "So I have filled it with something.",
+      "The next year, I’ll be able to graduate with my CS Degree.",
+      "College is of no use to me. I am doing it just for my parents.",
+      "I've completed Matric with Computer Science",
     ],
     icon: superiorIcon,
   },
@@ -49,9 +49,9 @@ export const experiences: experience[] = [
     sub_heading: "Fiverr & Upwork",
     experienceList: [
       "I've been freelancing since 2021 on various platforms such as Fiverr and Upwork.",
-      "I have satisfied over 13 clients in the field of web development.",
-      "I don’t know what to write here, so I am just trying to fill it.",
-      "So I have filled it with something.",
+      "I have satisfied over 0 clients in the field of web development.",
+      "I'm dedicated to delivering high-quality work.",
+      "My freelance work includes e-commerce stores, custom web applications and personal portfolios.",
     ],
     icon: fiverrIcon,
   },
@@ -60,7 +60,7 @@ export const experiences: experience[] = [
     sub_heading: "University of YouTube",
     experienceList: [
       "I’ve been learning web dev since May, 2020.",
-      "I’ve become an intermediate developer. It’s been 4 years practicing web development and I’ve created tons of projects.",
+      "It’s been 4 years practicing web development and I’ve created tons of projects.",
       "I’ve completely learn the backend and the frontend from scratch.",
       "I have also contributed to open source.",
     ],
@@ -68,7 +68,7 @@ export const experiences: experience[] = [
   },
   {
     heading: "Hobbies",
-    sub_heading: "History & Improving",
+    sub_heading: "History & Self-Improvement",
     experienceList: [
       "I’m a huge fan of history especially, the history of Muslims & Greeks.",
       "I am self-improvement guy. I use Muslim principles to improve myself.",
