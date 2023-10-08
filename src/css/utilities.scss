@@ -138,6 +138,12 @@ $pos: (
   margin-inline: auto;
 }
 
+button:disabled,
+button:hover:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
 .btn {
   position: relative;
   padding: 1.2rem 2.5rem;
@@ -155,13 +161,16 @@ $pos: (
   justify-content: center;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
   opacity: 0.85;
 }
 
 .btn-primary {
   background: $yellow;
+}
+
+.border-error {
+  border-bottom: 2px solid #ff9494 !important;
 }
 
 @media (max-width: 480px) {
