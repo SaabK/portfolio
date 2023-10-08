@@ -39,7 +39,14 @@ function Hero() {
               develop websites and help people build their brand.
             </p>
           </div>
-          <button className="btn btn-primary">Let's Talk</button>
+          <button className="btn btn-primary">
+            <a
+              href="#contact"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              Let's Talk
+            </a>
+          </button>
         </article>
 
         <div className="hero-image">
