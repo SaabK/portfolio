@@ -27,7 +27,7 @@ function Contact() {
         .max(200, "Bro stop! Write less than 200 characters")
         .required("Required"),
     }),
-    onSubmit: async (values, { resetForm }) => {
+    onSubmit: async (_, { resetForm }) => {
       await toast.promise(
         emailjs
           .sendForm(
