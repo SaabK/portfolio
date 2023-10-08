@@ -20,7 +20,7 @@ function SocialIcon({ social }: ISocialIcon) {
           background: getBackgroundColor(),
         }}
       >
-        <a href={social.href}>
+        <a href={social.href} target="_blank">
           <img src={social.icon} alt={social.name} />
         </a>
       </li>

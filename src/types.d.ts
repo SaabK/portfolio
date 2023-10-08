@@ -27,6 +27,7 @@ export interface IExperienceCard {
 
 export interface IProject {
   project: project;
+  delay: number;
 }
 
 export interface ISocialIcon {

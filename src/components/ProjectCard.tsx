@@ -1,8 +1,30 @@
 import { IProject } from "../types";
+import { motion } from "framer-motion";
 
-function ProjectCard({ project }: IProject) {
+function ProjectCard({ project, delay }: IProject) {
+  const animate = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 1.25,
+        delay: delay,
+      },
+    },
+  };
   return (
-    <div className="project-card">
+    <motion.div
+      className="project-card"
+      variants={animate}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <div className="project-image">
         <a href={project.href}>
           <img src={project.image} alt={project.name} />
@@ -21,7 +43,7 @@ function ProjectCard({ project }: IProject) {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

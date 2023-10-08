@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 function Contact() {
   const form = useRef(null);
@@ -57,13 +58,54 @@ function Contact() {
     },
   });
 
+  const animate = {
+    hidden: {
+      x: -100,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 1.25,
+      },
+    },
+  };
+
+  const counterAnimate = {
+    hidden: {
+      x: 100,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 1.25,
+      },
+    },
+  };
+
   return (
     <section id="contact">
       <div className="container flex justify-between">
-        <h1>
+        <motion.h1
+          variants={animate}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
           Let's <span className="text-yellow">Talk</span>
-        </h1>
-        <div className="information flex-1">
+        </motion.h1>
+        <motion.div
+          className="information flex-1"
+          variants={animate}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
           <h1>
             Let's <span className="text-yellow">Talk</span>
           </h1>
@@ -91,9 +133,13 @@ function Contact() {
               <SocialIcon social={social} key={index} />
             ))}
           </ul>
-        </div>
+        </motion.div>
 
-        <form
+        <motion.form
+          variants={counterAnimate}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
           className="flex-1"
           id="form"
           ref={form}
@@ -172,7 +218,7 @@ function Contact() {
               Submit
             </button>
           </div>
-        </form>
+        </motion.form>
       </div>
     </section>
   );
