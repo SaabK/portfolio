@@ -1,0 +1,181 @@
+@import "./variables.scss";
+
+@for $i from 1 through 20 {
+  .p-#{$i} {
+    padding: #{$i * 4}px;
+  }
+
+  .px-#{$i} {
+    padding-inline: #{$i * 4}px;
+  }
+
+  .py-#{$i} {
+    padding-block: #{$i * 4}px;
+  }
+
+  .pt-#{$i} {
+    padding-block-start: #{$i * 4}px;
+  }
+
+  .pb-#{$i} {
+    padding-block-end: #{$i * 4}px;
+  }
+
+  .m-#{$i} {
+    margin: #{$i * 4}px;
+  }
+
+  .mx-#{$i} {
+    margin-inline: #{$i * 4}px;
+  }
+
+  .my-#{$i} {
+    margin-block: #{$i * 4}px;
+  }
+
+  .gap-#{$i} {
+    gap: #{$i * 4}px;
+  }
+}
+
+$colors: (
+  "yellow": $yellow,
+  "black": $black,
+  "lightBlack": $light-black,
+  "blueishBlack": $blueish-black,
+  "darkBlack": $dark-black,
+  "white": $white,
+  "grey": $grey,
+);
+
+@each $name, $value in $colors {
+  .text-#{$name} {
+    color: $value;
+  }
+
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
+
+$pos: (
+  absolute: absolute,
+  relative: relative,
+  fixed: fixed,
+);
+
+@each $name, $val in $pos {
+  .#{$name} {
+    position: $val;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.inset-0 {
+  inset: 0;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.body {
+  font-size: $fs-body;
+  color: $grey;
+}
+
+.text-sm {
+  font-size: $fs-4;
+  font-family: $ff-medium;
+}
+
+.text-xs {
+  font-size: $fs-5;
+  font-family: $ff-light;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 82.5% !important;
+  margin-inline: auto;
+}
+
+button:disabled,
+button:hover:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.btn {
+  position: relative;
+  padding: 1.2rem 2.5rem;
+  background: transparent;
+  color: $black;
+  font-family: $ff-medium;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 9999px;
+  width: fit-content;
+  cursor: pointer;
+  transition: $transition-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background: $yellow;
+}
+
+.border-error {
+  border-bottom: 2px solid #ff9494 !important;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    width: 90% !important;
+  }
+}
