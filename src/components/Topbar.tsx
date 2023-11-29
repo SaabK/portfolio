@@ -1,6 +1,5 @@
 import Logo from "../assets/logo.svg";
 import email from "../assets/icons/email.svg";
-import { Img } from "react-optimized-image";
 
 function Topbar() {
   return (
