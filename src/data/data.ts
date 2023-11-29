@@ -38,8 +38,8 @@ export const experiences: experience[] = [
     sub_heading: "Superior College",
     experienceList: [
       "I’ve been studying computer science in college since 2023.",
-      "The next year, I’ll be able to graduate with my CS Degree.",
-      "College is of no use to me. I am doing it just for my parents.",
+      "The next year, I’ll be able to graduate with my ICS Degree.",
+      "My favorite subjects are Physics and Maths",
       "I've completed Matric with Computer Science",
     ],
     icon: superiorIcon,
@@ -119,9 +119,9 @@ export const skills = [
   },
 ];
 
-import easybankImage from "../assets/projects/easybank.png";
-import azadchaiwalaImage from "../assets/projects/azad_chaiwala.png";
-import retailStoreSoftware from "../assets/projects/bakala_software.png";
+import easybankImage from "../assets/projects/easybank-min.png";
+import azadchaiwalaImage from "../assets/projects/azad_chaiwala-min.png";
+import retailStoreSoftware from "../assets/projects/bakala_software-min.png";
 
 export const projects: project[] = [
   {
